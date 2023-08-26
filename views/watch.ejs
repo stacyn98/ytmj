@@ -61,7 +61,7 @@
         controls
         autoplay
       >
-        <% if (info.streaming_data) { %><source src="/s/<%= id %>"><% } %>
+        <% if (info.streaming_data) { %><source src="/s/<%= id %>?itag=22"><% } %>
         <% if (captions && captions.length) { %>
         <% captions.forEach(c => { %>
         <track src="/cc/<%= id %>?vss_id=<%= c.vss_id %>&fmt=vtt" srclang="<%= c.languange_code %>" label="<%= c.name.text %>">
